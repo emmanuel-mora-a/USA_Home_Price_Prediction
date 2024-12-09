@@ -1,13 +1,5 @@
 # Real Estate Price Prediction in the USA
 
-
-
-
-
-
-
-
-
 # 1 - Home Price LM model
 
 ## Data source
@@ -27,6 +19,12 @@ kaggle API Command
 ```
 !kaggle datasets download -d ahmedshahriarsakib/usa-real-estate-dataset
 ```
+
+You can also download the dataset and a demo video with the following google drive link
+
+[Home price prediction – Google Drive](https://drive.google.com/drive/folders/1sl8c6EhHaXgIXIGfcfG7bd5MaqxyDUIC?usp=sharing)
+
+
 
 ### Content
 
@@ -137,20 +135,13 @@ The key findings of the analysis are summarized in the results section. This inc
 
 ## Saving my model a pickle file
 
-
 This block of code is saving your trained LinearRegression model (`lr_clf`) to a file using the `pickle` module. This allows you to save the state of the model and reload it later without needing to retrain it. It's useful for saving models that take a long time to train or when you want to deploy the model in production
 
 I also saved it for later use in the flask app
 
-
-
-
-
 ## Exporting the columns in Json
 
 This block of code creates a JSON file named `columns.json` that contains the column names of the DataFrame `X`, converted to lowercase. This is useful for saving the structure or metadata of your DataFrame, which can be easily loaded and used late in the flask app
-
-
 
 # 2 - Home Price Prediction Flask App
 
